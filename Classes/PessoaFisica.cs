@@ -13,7 +13,12 @@ namespace BE7_FS4_UC12.Classes
 
         public bool ValidarDataNascimento(DateTime dataNasc)
         {
-            throw new NotImplementedException();
+           DateTime dataAtual = DateTime.Today;
+           double anos = (dataAtual - dataNasc).TotalDays /365;
+           if(anos >= 18)
+                return true;
+           else
+            return false;
         }
     }
 }

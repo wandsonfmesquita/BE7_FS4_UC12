@@ -3,10 +3,12 @@
 using BE7_FS4_UC12.Classes;
 
 PessoaFisica novaPf = new PessoaFisica();
-
+/*
 novaPf.nome = "Lozano";
-
 Console.WriteLine(novaPf.nome);
 Console.WriteLine("Nome: " + novaPf.nome);
 Console.WriteLine($"Nome: {novaPf.nome}");
+*/
 
+Console.WriteLine(novaPf.ValidarDataNascimento(new DateTime(2000,01,01)));
+;
